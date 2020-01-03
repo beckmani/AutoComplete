@@ -4,7 +4,7 @@ import redis_lock
 class StatsServer:
 
     def __init__(self):
-        self.redis_conn = redis.StrictRedis(host='localhost', port=6379)
+        self.redis_conn = redis.StrictRedis(host='redis', port=6379)
         self._lock = redis_lock.Lock(self.redis_conn, "stat-lock")
         self._lock.acquire()
         self.redis_conn.set('averageRequestHandleTimeMs', 0)

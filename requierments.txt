@@ -1,2 +1,0 @@
-flask==1.1.1
-python-redis-lock==3.4.0
