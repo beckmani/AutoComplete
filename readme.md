@@ -1,6 +1,6 @@
-# IBM XCLI python client
+# Autocomplete
 
-This repository contains a Flask server that implements Autosearch
+This repository contains a Flask server that implements Autocomplete
 
 ## Prerequisites
 
